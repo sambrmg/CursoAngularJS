@@ -10,10 +10,21 @@ var cores = [
 
 
 
-var tbody = document.querySelector("#tabelaDeCores tbody");
+// var tbody = document.querySelector("#tabelaDeCores tbody");
 
-var conteudoTbody = "";
+// var conteudoTbody = "";
+// cores.forEach(function(item){
+//     conteudoTbody = conteudoTbody + "<tr><td>" + item + "</td></tr>";
+// });
+// tbody.innerHTML = conteudoTbody;
+
+
+
 cores.forEach(function(item){
-    conteudoTbody = conteudoTbody + "<tr><td>" + item + "</td></tr>";
+    var tr = document.createElement("tr");
+    var td = document.createElement("td"); 
+    var conteudoNovo = document.createTextNode(item);
+    td.appendChild(conteudoNovo)
+    tr.appendChild(td)
+    document.querySelector('#tabelaDeCores tbody').appendChild(tr)
 });
-tbody.innerHTML = conteudoTbody;
