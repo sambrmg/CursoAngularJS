@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Altera a fonte */ 
+    background-color: #fff1d7; /* Altera a cor de fundo*/
+}
+
+ul{
+    list-style: none; /* Remove a bolinha da lista */
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+}
